@@ -1,7 +1,7 @@
 $(document).ready(function(){ // Якщо документ загрузився
 
      document.getElementById("oneMore").disabled = true;
-var rand_num = 2; // загадуємо число
+var rand_num = Math.floor(Math.random() * 100); // загадуємо число
 console.log(rand_num); // :) робимо собі підказку
 
 var hints = '';
@@ -13,7 +13,8 @@ var name=[];
      $('#oneMore').click(function () {
          document.getElementById("input_num").disabled = false;
 
-        rand_num = 2;
+        rand_num = Math.floor(Math.random() * 100);
+         console.log(rand_num);
         num=0;
         count = 0;
         $('#you_num').val('');
