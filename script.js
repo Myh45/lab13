@@ -20,6 +20,7 @@ var name=[];
         $('#your_name').val('');
         $('#table').html("").empty;
          
+        console.log(tableText);
         document.getElementById("you_num").disabled = false;
         document.getElementById("your_name").disabled = false;
         document.getElementById("oneMore").disabled = true;
@@ -30,6 +31,7 @@ $("#input_num").click(function() { //після нажання кнопки
     var num = $('#you_num').val(); // берем своє введене число  
              count++;
     if (num == rand_num) { // і перевіряємо чи вгадали
+         tableText='';
         document.getElementById("oneMore").disabled = false;
         hints += 'Вірно'+'<br>' ;
         countArr.push(count);
@@ -48,8 +50,9 @@ $("#input_num").click(function() { //після нажання кнопки
                            name[j + 1] = temp;
                         }
                     }
+        
         for(var i=0;i<name.length;i++){
-        tableText+='Ім`я: '+name[i]+'  Кількість спроб: '+countArr[i]+'<br>';
+        tableText+='Ім`я: '+name[i]+'  Кількість спроб: '+countArr[i]+'<br>';            
         }
         $('#table').html(tableText);
         document.getElementById("input_num").disabled = true;
@@ -64,7 +67,6 @@ $("#input_num").click(function() { //після нажання кнопки
             $('#myMmodal2').modal('show');
         }
     }
-    
 });
     
 
