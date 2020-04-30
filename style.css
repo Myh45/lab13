@@ -1,0 +1,19 @@
+.centerText{
+    text-align: center;
+   font-family: 'Quattrocento Sans', sans-serif;  
+    padding: 20px;
+}
+body{
+   background: #ad5389;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: auto;
+  width: 50%;
+  border: 3px solid white;
+  padding: 10px;
+     color: white;
+}
+#oneMore{
+    float: right;
+    text-align: right;
+}
