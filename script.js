@@ -18,9 +18,9 @@ var name=[];
         count = 0;
         $('#you_num').val('');
         $('#your_name').val('');
-
+        $('#table').html("").empty;
          
-         document.getElementById("you_num").disabled = false;
+        document.getElementById("you_num").disabled = false;
         document.getElementById("your_name").disabled = false;
         document.getElementById("oneMore").disabled = true;
 
